@@ -1,0 +1,12 @@
+.border{
+    border: 1px solid black;
+}
+.d-flex{
+    display: flex;
+}
+.flex-align{
+    align-items: center;
+}
+.flex-justify{
+    justify-content: center;
+}
