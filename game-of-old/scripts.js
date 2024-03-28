@@ -1,31 +1,29 @@
 function clicar(i){
-    switch (i){
-        case 1:
-            document.getElementById('div1').innerHTML = 'x'
-            break
-        case 2:
-            document.getElementById('div2').innerHTML = 'x'
-            break
-        case 3:
-            document.getElementById('div3').innerHTML = 'x'
-            break
-        case 4:
-            document.getElementById('div4').innerHTML = 'x'
-            break
-        case 5:
-            document.getElementById('div5').innerHTML = 'x'
-            break
-        case 6:
-            document.getElementById('div6').innerHTML = 'x'
-            break
-        case 7:
-            document.getElementById('div7').innerHTML = 'x'
-            break
-        case 8:
-            document.getElementById('div8').innerHTML = 'x'
-            break
-        case 9:
-            document.getElementById('div9').innerHTML = 'x'
-            break
+    var jogada = document.getElementById(i).innerHTML
+    if(jogada == ""){
+        jogada = 'x'
+        document.getElementById(i).innerHTML = jogada
+
+        var possui_espaco = false
+        for(var j=1; j<=9; j++){
+            var espaco = document.getElementById(j).innerHTML
+            if (espaco == ""){
+                possui_espaco = true
+            }
+        }
+        if (possui_espaco == true){
+            jogada_bot()
+        }
+    }
+}
+function jogada_bot(){
+    var jogada_feita = false
+    while (jogada_feita == false){
+        var jogada_bot = Math.floor(Math.random() * 8) + 1
+        var escolha_bot = document.getElementById(jogada_bot).innerHTML
+        if(escolha_bot == ""){
+            document.getElementById(jogada_bot).innerHTML = 'O'
+            jogada_feita = true
+        }
     }
 }
