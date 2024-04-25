@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz 4x4 com Títulos de Coluna</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            text-align: center;
+            border: 1px solid rgb(99, 99, 99);
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+        }
+        .color-yellow{background-color: rgb(252, 252, 73);}
+        .color-green{background-color: rgb(46, 179, 46);}
+        .color-orange{background-color: rgb(250, 182, 56);}
+        .color-red{background-color: rgb(252, 69, 69);}
+        .likehood-number{width: 30px; border: none; border-left: 1px solid black;}
+        .impact-number{padding: 15px;}
+        .likehood-title{ writing-mode: vertical-rl; transform: rotate(-180deg); font-size: 30px; width: 30px; border: none;}
+        .impact-title{border-top: 1px solid black; font-size: 30px;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="likehood-title" rowspan="4">LIKEHOOD</td>
+            <td class="likehood-number">4</td>
+            <td id="block-1" class="color-yellow">1</td>
+            <td id="" class="color-orange">2</td>
+            <td id="" class="color-red">3</td>
+            <td id="" class="color-red">4</td>
+        </tr>
+        <tr>
+            <td class="likehood-number">3</td>
+            <td class="color-yellow">5</td>
+            <td class="color-yellow">6</td>
+            <td class="color-orange">7</td>
+            <td class="color-red">8</td>
+        </tr>
+        <tr>
+            <td class="likehood-number">2</td>
+            <td class="color-green">9</td>
+            <td class="color-yellow">10</td>
+            <td class="color-yellow">11</td>
+            <td class="color-orange">12</td>
+        </tr>
+        <tr>
+            <td class="likehood-number">1</td>
+            <td class="color-green">13</td>
+            <td class="color-green">14</td>
+            <td class="color-yellow">15</td>
+            <td class="color-orange">16</td>
+        </tr>
+        <tr>
+            <th colspan="2"></th>
+            <th class="impact-number">1</th>
+            <th class="impact-number">2</th>
+            <th class="impact-number">3</th>
+            <th class="impact-number">4</th>
+        </tr>
+        <tr>
+            <th colspan="2"></th>
+            <th class="impact-title" colspan="4">IMPACT</th>
+        </tr>
+    </table>
+</body>
+</html>
