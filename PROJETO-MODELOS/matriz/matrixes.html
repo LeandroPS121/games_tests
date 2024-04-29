@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz 4x4 com Títulos de Coluna</title>
+
+<style>
+.rn3,.rn4{bottom:10%}.blocks2,.border{box-sizing:border-box}.blocks2,.td1{text-align:center}*{margin:0;font-family:Arial}.head-app{width:1920px;height:80px;display:flex;align-items:center}.matrixes{display:flex;width:1570px;height:800px;position:relative;left:238px;top:-1px}.border{border:1px solid #000}.main-div{height:875px;width:1920px;display:flex}.cyan-square,.red-square,.roman-number,.yellow-square,h2,hr,label{position:absolute}.div1,.div2,.left-div{width:240px;height:100%;top:-1px;position:relative}.table2,table{border-collapse:collapse;width:100%;height:100%}.td1{border:1px solid #e7e4e4;width:20%;height:20%;padding:10px}.color-yellow{background-color:#ffde4a}.color-green{background-color:#51b045}.color-orange{background-color:#ffb259}.color-red{background-color:#f23a3d}.div1{width:420px;height:295px;left:13.5%;top:25%}.roman-number{z-index:1;opacity:50%;color:#8a8484;font-size:50px}.rn1{right:10%;top:8%}.rn2{right:50%;top:8%}.rn3{right:40%}.rn4{right:70%}.blocks2{width:20%;height:10%}.color-red2{border:1px solid #ffa7a7}.color-yellow2{border:1px solid #fcfc74;border-bottom:none}.color-blue2{border:1px solid #78e3fd}.impact-number2{vertical-align:top}.time-number2{text-align:start}.div2{height:320px;width:550px;left:27%;top:25%}.red-square{width:221px;height:121px;border:2px solid red}.yellow-square{width:550px;height:200px;border:2px solid #ff0}.cyan-square{width:546px;height:317px;border:2px solid #0ff}.z-0{z-index:0}.z-1{z-index:1}.z-2{z-index:2}
+</style>
+
+</head>
+<body>
+    <header class="head-app border"></header>
+    <div class="main-div border">
+    <div class="left-div border">
+        <div class="matrixes border">
+            <div class="infos">
+                <div>
+                    <h2 style="left: 360px; top: 150px; width: 170px;">RISK MATRIX</h2>
+                </div>
+                <div class="likehood">
+                    <label style="transform: rotate(-90deg); left: 128px; top: 340px;">LIKEHOOD</label>
+                    <hr style="transform: rotate(-90deg); left: 33px; top: 347px; width: 292px;">
+                    <div>
+                        <label style="left: 192px; top: 230px; font-size: 12px;">4</label>
+                        <label style="left: 192px; top: 302px; font-size: 12px;">3</label>
+                        <label style="left: 192px; top: 375px; font-size: 12px;">2</label>
+                        <label style="left: 192px; top: 448px; font-size: 12px;">1</label>
+                    </div>
+                </div>
+                <div class="impact">
+                    <div>
+                        <label style="left: 260px; top: 500px; font-size: 12px;">1</label>
+                        <label style="left: 365px; top: 500px; font-size: 12px;">2</label>
+                        <label style="left: 470px; top: 500px; font-size: 12px;">3</label>
+                        <label style="left: 575px; top: 500px; font-size: 12px;">4</label>
+                    </div>
+                    <hr style="width: 417px; left: 213px; top: 524px;">
+                    <label style="left: 400px; top: 530px;">IMPACT</label>
+                </div>
+                <div class="risk-level">
+                    <label style="left: 350px; top: 700px; width: 150px; height: 50px; background-color: rgb(5, 165, 5); display: flex; align-items: center; justify-content: center; border-radius: 20px;">RISK LEVEL: <label id="risk-level" style="left: 127px;">1</label></label>
+                </div>
+
+                <div>
+                    <h2 style="left: 950px; top: 145px; width: 335px;">CRITICAL PROCESS MATRIX</h2>
+                </div>
+                <div>
+                    <label style="transform: rotate(-90deg); width: 150px; left: 700px; top: 340px; font-size: 13px;"><strong>BUSINESS IMPACT</strong></label>
+                    <div>
+                        <label style="left: 810px; top: 190px; font-size: 11px;"><strong>5,00</strong></label>
+                        <label style="left: 810px; top: 227px; font-size: 11px;"><strong>4,51</strong></label>
+                        <label style="left: 810px; top: 267px; font-size: 11px;"><strong>4,00</strong></label>
+                        <label style="left: 810px; top: 307px; font-size: 11px;"><strong>3,51</strong></label>
+                        <label style="left: 810px; top: 347px; font-size: 11px;"><strong>3,00</strong></label>
+                        <label style="left: 810px; top: 387px; font-size: 11px;"><strong>2,51</strong></label>
+                        <label style="left: 810px; top: 427px; font-size: 11px;"><strong>2,00</strong></label>
+                        <label style="left: 810px; top: 467px; font-size: 11px;"><strong>1,51</strong></label>
+                        <label style="left: 810px; top: 507px; font-size: 11px;"><strong>1,00</strong></label>
+                    </div>
+
+                    <div>
+                        <label style="opacity: 0.7; width: 100px; font-size: 12px; left: 835px; top: 540px;">0-4 h</label>
+                        <label style="opacity: 0.7; width: 100px; font-size: 12px; left: 940px; top: 540px;">1 day</label>
+                        <label style="opacity: 0.7; width: 100px; font-size: 12px; left: 1050px; top: 540px;">2 days</label>
+                        <label style="opacity: 0.7; width: 100px; font-size: 12px; left: 1155px; top: 540px;">7 days</label>
+                        <label style="opacity: 0.7; width: 100px; font-size: 12px; left: 1260px; top: 540px;">14 days</label>
+                        <label style="opacity: 0.7; width: 150px; font-size: 12px; left: 1350px; top: 540px;">more than 14 days</label>
+                    </div>
+
+                    <div>
+                        <label style="color: rgb(144, 144, 255); font-size: 12px; left: 1415px; top: 230px;"><strong>MASSIVE</strong></label>
+                        <label style="color: rgb(144, 144, 255); font-size: 12px; left: 1415px; top: 280px;"><strong>SEVERE</strong></label>
+                        <label style="color: rgb(144, 144, 255); font-size: 12px; left: 1415px; top: 390px;"><strong>MODERATE</strong></label>
+                        <label style="color: rgb(144, 144, 255); font-size: 12px; left: 1415px; top: 465px;"><strong>LOW</strong></label>
+                        <label style="color: rgb(144, 144, 255); font-size: 12px; left: 1415px; top: 505px;"><strong>INSIGNIFICANT</strong></label>
+                    </div>
+
+                    <div>
+                        <label style="opacity: 0.7; width: 240px; left: 995px; top: 575px;">RECOVERY TIME OBJECTIVE</label>
+                    </div>
+
+                </div>
+            </div>
+        <div class="div1">
+            <label class="roman-number rn1">I</label><label class="roman-number rn2">II</label>
+            <label class="roman-number rn3">III</label><label class="roman-number rn4">IV</label>
+        <table>
+                <tr>
+                    <td id="block-1" class="td1 color-yellow">1</td><td id="block-2" class="td1 color-orange">2</td>
+                    <td id="block-3" class="td1 color-red">3</td><td id="block-4" class="td1 color-red">4</td>
+                </tr>
+                <tr>
+                    <td id="block-5" class="td1 color-yellow">5</td><td id="block-6" class="td1 color-yellow">6</td>
+                    <td id="block-7" class="td1 color-orange">7</td><td id="block-8" class="td1 color-red">8</td>
+                </tr>
+                <tr>
+                    <td id="block-9" class=" td1 color-green">9</td><td id="block-10" class="td1 color-yellow">10</td>
+                    <td id="block-11" class="td1 color-yellow">11</td><td id="block-12" class="td1 color-orange">12</td>
+                </tr>
+                <tr>
+                    <td id="block-13" class="td1 color-green">13</td><td id="block-14" class="td1 color-green">14</td>
+                    <td id="block-15" class="td1 color-yellow">15</td><td id="block-16" class="td1 color-orange">16</td>
+                </tr>
+            </table>
+        </div>
+
+    <div class="div2">
+        <table class="table2">
+            <tr>
+                <div class="red-square z-2 border">
+                    <td class="blocks2 color-red2">1</td><td class="blocks2 color-red2">2</td>
+                    <td class="blocks2 color-yellow2">3</td><td class="blocks2 color-yellow2">4</td>
+                    <td class="blocks2 color-yellow2">5</td>
+                </div>
+            </tr>
+            <tr>
+                <div class="yellow-square z-1 border">
+                    <td class="blocks2 color-red2">6</td><td class="blocks2 color-red2">7</td>
+                    <td class="blocks2 color-yellow2">8</td><td class="blocks2 color-yellow2">9</td>
+                    <td class="blocks2 color-yellow2">10</td>
+                </div>
+            </tr>
+            <tr>
+                <div class="cyan-square z-0">
+                    <td class="blocks2 color-red2">11</td><td class="blocks2 color-red2">12</td>
+                    <td class="blocks2 color-yellow2">13</td><td class="blocks2 color-yellow2">14</td>
+                    <td class="blocks2 color-yellow2">15</td>
+                </div>
+            </tr>
+            <tr>
+                <!-- <td class="impact-number2">3,51</td> -->
+                <td class="blocks2 color-yellow2">16</td><td class="blocks2 color-yellow2">17</td>
+                <td class="blocks2 color-yellow2">18</td><td class="blocks2 color-yellow2">19</td>
+                <td class="blocks2 color-yellow2">20</td>
+            </tr>
+            <tr>
+                <!-- <td class="impact-number2">3</td> -->
+                <td class="blocks2 color-yellow2">21</td><td class="blocks2 color-yellow2">22</td>
+                <td class="blocks2 color-yellow2">23</td><td class="blocks2 color-yellow2">24</td>
+                <td class="blocks2 color-yellow2">25</td>
+            </tr>
+            <tr>
+                <!-- <td class="impact-number2">2,51</td> -->
+                <td class="blocks2 color-blue2">26</td><td class="blocks2 color-blue2">27</td>
+                <td class="blocks2 color-blue2">28</td><td class="blocks2 color-blue2">29</td>
+                <td class="blocks2 color-blue2">30</td>
+            </tr>
+            <tr>
+                <!-- <td class="impact-number2">2</td> -->
+                <td class="blocks2 color-blue2">31</td><td class="blocks2 color-blue2">32</td>
+                <td class="blocks2 color-blue2">33</td><td class="blocks2 color-blue2">34</td>
+                <td class="blocks2 color-blue2">35</td>
+            </tr>
+            <tr>
+                <!-- <td class="impact-number2">1,51</td> -->
+                <td class="blocks2 color-blue2">36</td><td class="blocks2 color-blue2">37</td>
+                <td class="blocks2 color-blue2">38</td><td class="blocks2 color-blue2">39</td>
+                <td class="blocks2 color-blue2">40</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
