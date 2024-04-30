@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        font-family: Arial;
+    }
+    .legend-div{
+        display: flex;
+    }
+    .table-border{
+        border: 1px solid black;
+        margin: 5px;
+        border-collapse: collapse;
+    }
+    td{
+        border: 1px solid black;
+        color: rgb(41, 41, 41);
+        padding: 4px;
+        padding-right: 80px;
+    }
+    th{
+        background-color: rgb(38, 140, 243);
+        color: white;
+        border: 1px solid black;
+        padding: 4px;
+        font-size: 20px;
+    }
+    .risk-desc{
+        margin-left: 25px;
+    }
+    .relative{
+        position: relative;
+    }
+    .absolute{
+        position: absolute;
+    }
+    .risk-level{
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+    }
+    .rl1{
+        background-color: red;
+    }
+    .rl2{
+        background-color: orange;
+    }
+    .rl3{
+        background-color: yellow;
+    }
+    .rl4{
+        background-color: green;
+    }
+
+</style>
+
+<body>
+    <div class="legend-div absolute">
+        <table class="table-border">
+            <tr><th>Treatment Levels</th></tr>
+            <tr><td><label class="relative"><div class="absolute risk-level rl1"></div></label> <label class="risk-desc"> A - Immediate Action - Unacceptable</label></td></tr>
+            <tr><td><label class="relative"><div class="absolute risk-level rl2"></div></label> <label class="risk-desc"> B - Medium - Term and Short-Term Action</label></td></tr>
+            <tr><td><label class="relative"><div class="absolute risk-level rl3"></div></label> <label class="risk-desc"> C - Monitoring and Management</label></td></tr>
+            <tr><td><label class="relative"><div class="absolute risk-level rl4"></div></label> <label class="risk-desc"> D - Tolerable Risk</label></td></tr>
+        </table>
+
+        <table class="table-border">
+            <tr><th>Likelihood</th></tr>
+            <tr><td>5 - Very High</td></tr>
+            <tr><td>4 - High</td></tr>
+            <tr><td>3 - Moderate</td></tr>
+            <tr><td>2 - Medium</td></tr>
+            <tr><td>1 - Low</td></tr>
+        </table>
+
+        <table class="table-border">
+            <tr><th>Impact</th></tr>
+            <tr><td>5 - Catastrophic</td></tr>
+            <tr><td>4 - High</td></tr>
+            <tr><td>3 - Moderate</td></tr>
+            <tr><td>2 - Minor</td></tr>
+            <tr><td>1 - Insignificant</td></tr>
+        </table>
+    </div>
+</body>
+</html>

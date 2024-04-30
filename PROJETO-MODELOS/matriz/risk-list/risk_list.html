@@ -5,72 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="risk-script.js"></script>
-    <link rel="stylesheet" href="risk-style.css">
+    <link rel="stylesheet" href="risk_list.css">
 </head>
-
-<style>
-    *{margin: 0; font-family: Arial;}
-    .border{border: 1px solid black; box-sizing: border-box;}
-    .head-app{width:1920px;height:80px;display:flex;align-items:center}
-    .left-div{width:240px;height:875px;top:80px;position:relative}
-    .relative{position: relative;}
-    .absolute{position: absolute;}
-    .risk-head{height: 100px; width: 600px; left: 330px; top: 250px; border-radius: 10px; background-color: rgb(59, 134, 191);}
-    .risk-list{height: 545px; width: 600px; left: -1px; top: 35px; border-radius: 10px; background-color: white; display: flex; flex-direction: column;}
-    .z-0{z-index: 0;}
-    .z-1{z-index: 1;}
-    .list-row{border-bottom: 1px solid black; padding: 5px; width: 588px; height: 23px;}
-    .last-list-row{padding: 5px;}
-    .id{font-size: 18px;}
-    .risk-desc{width: 480px; height: 25px; font-size: 20px; left: 50px; padding-left: 5px; border-radius: 10px;}
-    .risk-sel-e{right: 15px; height: 25px; width: 25px; border-radius: 50px; display: flex; align-items: center; justify-content: center;}
-    .risk-sel-i{height: 19px; width: 19px; border-radius: 50px;}
-    .rs-1{right: 18px; top: 8px;} .rs-2{right: 18px; top: 42px;} .rs-3{right: 18px; top: 75.5px;} .rs-4{right: 18px; top: 110px;} .rs-5{right: 18px; top: 144px;}
-    .rs-6{right: 18px; top: 178px;} .rs-7{right: 18px; top: 212px;} .rs-8{right: 18px; top: 246px;} .rs-9{right: 18px; top: 280px;} .rs-10{right: 18px; top: 314px;}
-    .rs-11{right: 18px; top: 348px;} .rs-12{right: 18px; top: 382px;} .rs-13{right: 18px; top: 416px;} .rs-14{right: 18px; top: 450px;} .rs-15{right: 18px; top: 484px;} .rs-16{right: 18px; top: 518px;}
-    .vertical-line1{transform: rotate(-90deg); width: 542px; left: -235px; top: 270px;}
-    .vertical-line2{transform: rotate(-90deg); width: 542px; right: -220px; top: 270px;}
-    .risk-head-hash{left: 10px; top: 10px;}
-    .risk-head-riskName{left: 50px; top: 10px;}
-    .risk-head-sel{left: 555px; top: 10px;}
-    .color-white{
-        color: white;
-    }
-    .risk-name{width: 330px; height: 640px; left: 1000px; top: 250px; border-radius: 10px;}
-    .risk-name-title{padding: 20px; font-size: 25px; text-align: center; border-bottom: 1px solid black;}
-</style>
 
 <body>
     <nav class="head-app border"></nav>
     <div class="left-div absolute border"></div>
 
     <div class="risk-head absolute border z-0">
+        <label class="risk-list-title absolute">Risk List</label>
         <label class="risk-head-hash absolute color-white">##</label> <label class="risk-head-riskName absolute color-white">Risk name</label> <label class="risk-head-sel absolute color-white">Sel.</label>
         <div class="risk-list relative border z-1">
             <hr class="absolute vertical-line1">
             <hr class="absolute vertical-line2">
-            <div class="list-row"><label class="id absolute">01</label><label class="risk-desc absolute" id="rn" onclick="selClick(1)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-1 border"  id="rs-1"  onclick="selClick(1)"></label></label></div>
-            <div class="list-row"><label class="id absolute">02</label><label class="risk-desc absolute" id="rn" onclick="selClick(2)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-2 border"  id="rs-2"  onclick="selClick(2)"></label></label></div>
-            <div class="list-row"><label class="id absolute">03</label><label class="risk-desc absolute" id="rn" onclick="selClick(3)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-3 border"  id="rs-3"  onclick="selClick(3)"></label></label></div>
-            <div class="list-row"><label class="id absolute">04</label><label class="risk-desc absolute" id="rn" onclick="selClick(4)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-4 border"  id="rs-4"  onclick="selClick(4)"></label></label></div>
-            <div class="list-row"><label class="id absolute">05</label><label class="risk-desc absolute" id="rn" onclick="selClick(5)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-5 border"  id="rs-5"  onclick="selClick(5)"></label></label></div>
-            <div class="list-row"><label class="id absolute">06</label><label class="risk-desc absolute" id="rn" onclick="selClick(6)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-6 border"  id="rs-6"  onclick="selClick(6)"></label></label></div>
-            <div class="list-row"><label class="id absolute">07</label><label class="risk-desc absolute" id="rn" onclick="selClick(7)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-7 border"  id="rs-7"  onclick="selClick(7)"></label></label></div>
-            <div class="list-row"><label class="id absolute">08</label><label class="risk-desc absolute" id="rn" onclick="selClick(8)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-8 border"  id="rs-8"  onclick="selClick(8)"></label></label></div>
-            <div class="list-row"><label class="id absolute">09</label><label class="risk-desc absolute" id="rn" onclick="selClick(9)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-9 border"  id="rs-9"  onclick="selClick(9)"></label></label></div>
-            <div class="list-row"><label class="id absolute">10</label><label class="risk-desc absolute" id="rn" onclick="selClick(10)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-10 border" id="rs-10" onclick="selClick(10)"></label></label></div>
-            <div class="list-row"><label class="id absolute">11</label><label class="risk-desc absolute" id="rn" onclick="selClick(11)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-11 border" id="rs-11" onclick="selClick(11)"></label></label></div>
-            <div class="list-row"><label class="id absolute">12</label><label class="risk-desc absolute" id="rn" onclick="selClick(12)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-12 border" id="rs-12" onclick="selClick(12)"></label></label></div>
-            <div class="list-row"><label class="id absolute">13</label><label class="risk-desc absolute" id="rn" onclick="selClick(13)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-13 border" id="rs-13" onclick="selClick(13)"></label></label></div>
-            <div class="list-row"><label class="id absolute">14</label><label class="risk-desc absolute" id="rn" onclick="selClick(14)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-14 border" id="rs-14" onclick="selClick(14)"></label></label></div>
-            <div class="list-row"><label class="id absolute">15</label><label class="risk-desc absolute" id="rn" onclick="selClick(15)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-15 border" id="rs-15" onclick="selClick(15)"></label></label></div>
-            <div class="last-list-row"><label class="id absolute">16</label><label class="risk-desc absolute" id="rn" onclick="selClick(16)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-16 border" id="rs-16" onclick="selClick(16)"></label></label></div>
+            <div class="list-row" onclick="selClick(1)"><label class="id absolute">01</label><label id="rd-1" class="risk-desc absolute">Inventory theft</label>                            <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-1 border"  id="rs-1" ></label></label></div>
+            <div class="list-row" onclick="selClick(2)"><label class="id absolute">02</label><label id="rd-2" class="risk-desc absolute">Collusion Risk Among Employees</label>             <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-2 border"  id="rs-2" ></label></label></div>
+            <div class="list-row" onclick="selClick(3)"><label class="id absolute">03</label><label id="rd-3" class="risk-desc absolute">Cargo Theft</label>                                <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-3 border"  id="rs-3" ></label></label></div>
+            <div class="list-row" onclick="selClick(4)"><label class="id absolute">04</label><label id="rd-4" class="risk-desc absolute">Workplace Harassment</label>                       <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-4 border"  id="rs-4" ></label></label></div>
+            <div class="list-row" onclick="selClick(5)"><label class="id absolute">05</label><label id="rd-5" class="risk-desc absolute">Firearm attack or active shooting</label>          <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-5 border"  id="rs-5" ></label></label></div>
+            <div class="list-row" onclick="selClick(6)"><label class="id absolute">06</label><label id="rd-6" class="risk-desc absolute">Blackout</label>                                   <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-6 border"  id="rs-6" ></label></label></div>
+            <div class="list-row" onclick="selClick(7)"><label class="id absolute">07</label><label id="rd-7" class="risk-desc absolute">Sabotage of Firefighting System</label>            <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-7 border"  id="rs-7" ></label></label></div>
+            <div class="list-row" onclick="selClick(8)"><label class="id absolute">08</label><label id="rd-8" class="risk-desc absolute">Disagreement / Fights</label>                      <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-8 border"  id="rs-8" ></label></label></div>
+            <div class="list-row" onclick="selClick(9)"><label class="id absolute">09</label><label id="rd-9" class="risk-desc absolute">Delivery Disruption and Theft</label>              <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-9 border"  id="rs-9" ></label></label></div>
+            <div class="list-row" onclick="selClick(10)"><label class="id absolute">10</label><label id="rd-10" class="risk-desc absolute">Theft of Equipment/ Maintenance Material</label> <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-10 border" id="rs-10"></label></label></div>
+            <div class="list-row" onclick="selClick(11)"><label class="id absolute">11</label><label id="rd-11" class="risk-desc absolute">Theft of Warehouse Products</label>              <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-11 border" id="rs-11"></label></label></div>
+            <div class="list-row" onclick="selClick(12)"><label class="id absolute">12</label><label id="rd-12" class="risk-desc absolute">Homicide at the Distribution Center</label>      <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-12 border" id="rs-12"></label></label></div>
+            <div class="list-row" onclick="selClick(13)"><label class="id absolute">13</label><label id="rd-13" class="risk-desc absolute">Instrusion at the Distribution Center</label>    <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-13 border" id="rs-13"></label></label></div>
+            <div class="list-row" onclick="selClick(14)"><label class="id absolute">14</label><label id="rd-14" class="risk-desc absolute">-</label>                                        <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-14 border" id="rs-14"></label></label></div>
+            <div class="list-row" onclick="selClick(15)"><label class="id absolute">15</label><label id="rd-15" class="risk-desc absolute">-</label>                                        <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-15 border" id="rs-15"></label></label></div>
+            <div class="list-row last-list-row" onclick="selClick(16)"><label class="id absolute">16</label><label id="rd-16" class="risk-desc absolute">-</label>                          <label class="risk-sel-e absolute border"><label class="risk-sel-i rs-16 border" id="rs-16"></label></label></div>
         </div>
     </div>
 
     <div class="risk-name border absolute">
         <div class="risk-name-title">
-            <label id="risk-name">Risk name 1</label>
+            <label id="risk-name">-</label>
+        </div>
+        <div class="risk-texts">
+            <p style="display: none;" id="r1">This risk refers to the threat of products stored in inventory being unlawfully removed, disappearing, or stolen. It can occur due to internal actions, such as dishonest employees or inadequate management, or external factors, like criminal break-ins. The risk of inventory theft can result in financial losses, product availability issues, reputational damage, and legal complications.</p>
+            <p style="display: none;" id="r2">This risk refers to the threat of employees within an organization conspiring or collaborating fraudulently to engage in illegal, unethical, or harmful activities detrimental to the company's interests. This may include manipulating financial data, embezzlement, bribery, internal fraud, and other dishonest behaviors that can result in significant harm to the organization</p>
+            <p style="display: none;" id="r3">This risk involves the criminal action of individuals or groups targeting to steal goods, products, or cargo in transit, whether on roads, ports, or other transportation locations.</p>
+            <p style="display: none;" id="r4">This risk is related to exposing workers to humiliating and embarrassing situations, repetitive and prolonged during working hours and in the performance of their duties.</p>
+            <p style="display: none;" id="r5">Refers to a dangerous and potentially deadly situation in which an individual or a group of individuals intentionally use firearms to harm or kill people within a distribution center. This type of incident poses significant risks to the safety and security of employees, visitors, and anyone present at the facility.</p>
+            <p style="display: none;" id="r6">A blackout is the lack of electricity supply, resulting in the complete darkness of the Distribution Center facilities</p>
+            <p style="display: none;" id="r7">The risk of sabotage of the firefighting system involves the threat of deliberate actions aimed at disabling or compromising the effectiveness of the fire safety measures and equipment within a facility. This risk encompasses scenarios where individuals, whether internal or external, may intentionally tamper with fire suppression systems, alarms, or other critical components. Such sabotage can significantly increase the vulnerability of the facility to fire-related incidents, potentially resulting in property damage, operational disruption, and jeopardizing the safety of personnel.</p>
+            <p style="display: none;" id="r8">Disorder resulting from discussions and fights, with or without physical contact, that can endanger individuals' well-being and lead to property damage.</p>
+            <p style="display: none;" id="r9">The risk of delivery disruption and theft is related to operational failures (intentional or unintentional) that result in a product not reaching its destination as planned, including instances where products are stolen or unlawfully appropriated during the delivery process. These disruptions can occur due to various reasons, impacting the efficiency of the distribution process and potentially leading to financial losses and security breaches.</p>
+            <p style="display: none;" id="r10">The risk is related to the theft of laptops, bags, watches, wallets, blazers, or any belongings of event attendees at the Distribution Center. This risk may occur in areas with high foot traffic.</p>
+            <p style="display: none;" id="r11">Theft at the Distribution Center refers to products being transported in containers. This risk may occur in areas with high foot traffic</p>
+            <p style="display: none;" id="r12">Occurs when one person takes the life of another, or when someone takes their own life (suicide). This can disrupt the Distribution Center's routine and highlight the weaknesses in the existing security system, damaging the company's image.</p>
+            <p style="display: none;" id="r13">The risk is related to the possibility of an intrusion when control over the premises is lost, such as during a strike or other demonstration.</p>
         </div>
     </div>
 </body>

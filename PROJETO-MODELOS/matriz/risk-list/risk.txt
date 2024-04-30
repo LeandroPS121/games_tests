@@ -1,0 +1,32 @@
+    *{margin: 0; font-family: Arial;}
+    .border{border: 1px solid black; box-sizing: border-box;}
+    .head-app{width:1920px;height:80px;display:flex;align-items:center}
+    .left-div{width:240px;height:875px;top:80px;position:relative}
+    .relative{position: relative;}
+    .absolute{position: absolute;}
+    .risk-head{height: 100px; width: 600px; left: 330px; top: 250px; border-radius: 10px; background-color: rgb(59, 134, 191);}
+    .risk-list{height: 545px; width: 600px; left: -1px; top: 35px; border-radius: 10px; background-color: white; display: flex; flex-direction: column;}
+    .z-0{z-index: 0;}
+    .z-1{z-index: 1;}
+    .list-row{border-bottom: 1px solid black; padding: 5px; width: 588px; height: 23px;}
+    .last-list-row{padding: 5px; border: none;}
+    .id{font-size: 18px;}
+    .risk-desc{width: 480px; height: 25px; font-size: 20px; left: 50px; padding-left: 5px; border-radius: 10px;}
+    .risk-sel-e{right: 15px; height: 25px; width: 25px; border-radius: 50px; display: flex; align-items: center; justify-content: center;}
+    .risk-sel-i{height: 19px; width: 19px; border-radius: 50px;}
+    .rs-1{right: 18px; top: 8px;} .rs-2{right: 18px; top: 42px;} .rs-3{right: 18px; top: 75.5px;} .rs-4{right: 18px; top: 110px;} .rs-5{right: 18px; top: 144px;}
+    .rs-6{right: 18px; top: 178px;} .rs-7{right: 18px; top: 212px;} .rs-8{right: 18px; top: 246px;} .rs-9{right: 18px; top: 280px;} .rs-10{right: 18px; top: 314px;}
+    .rs-11{right: 18px; top: 348px;} .rs-12{right: 18px; top: 382px;} .rs-13{right: 18px; top: 416px;} .rs-14{right: 18px; top: 450px;} .rs-15{right: 18px; top: 484px;} .rs-16{right: 18px; top: 518px;}
+    .vertical-line1{transform: rotate(-90deg); width: 542px; left: -235px; top: 270px;}
+    .vertical-line2{transform: rotate(-90deg); width: 542px; right: -220px; top: 270px;}
+    .risk-head-hash{left: 10px; top: 10px;}
+    .risk-head-riskName{left: 50px; top: 10px;}
+    .risk-head-sel{left: 555px; top: 10px;}
+    .color-white{
+        color: white;
+    }
+    .risk-list-title{left: 240px; top: -50px; font-size: 40px;}
+    .risk-name{width: 330px; height: 640px; left: 1000px; top: 250px; border-radius: 10px;}
+    .risk-name-title{padding: 20px; font-size: 25px; text-align: center; border-bottom: 1px solid black;}
+    .risk-texts{padding: 10px; font-size: 20px; text-align: justify;}
+    [class^="list-row"]:hover{background-color: rgb(79, 178, 248); border-radius: 10px;}
