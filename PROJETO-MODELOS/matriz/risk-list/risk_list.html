@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="risk-script.js"></script>
+    <link rel="stylesheet" href="risk-style.css">
+</head>
+
+<style>
+    *{margin: 0; font-family: Arial;}
+    .border{border: 1px solid black; box-sizing: border-box;}
+    .head-app{width:1920px;height:80px;display:flex;align-items:center}
+    .left-div{width:240px;height:875px;top:80px;position:relative}
+    .relative{position: relative;}
+    .absolute{position: absolute;}
+    .risk-head{height: 100px; width: 600px; left: 330px; top: 250px; border-radius: 10px; background-color: rgb(59, 134, 191);}
+    .risk-list{height: 545px; width: 600px; left: -1px; top: 35px; border-radius: 10px; background-color: white; display: flex; flex-direction: column;}
+    .z-0{z-index: 0;}
+    .z-1{z-index: 1;}
+    .list-row{border-bottom: 1px solid black; padding: 5px; width: 588px; height: 23px;}
+    .last-list-row{padding: 5px;}
+    .id{font-size: 18px;}
+    .risk-desc{width: 480px; height: 25px; font-size: 20px; left: 50px; padding-left: 5px; border-radius: 10px;}
+    .risk-sel-e{right: 15px; height: 25px; width: 25px; border-radius: 50px; display: flex; align-items: center; justify-content: center;}
+    .risk-sel-i{height: 19px; width: 19px; border-radius: 50px;}
+    .rs-1{right: 18px; top: 8px;} .rs-2{right: 18px; top: 42px;} .rs-3{right: 18px; top: 75.5px;} .rs-4{right: 18px; top: 110px;} .rs-5{right: 18px; top: 144px;}
+    .rs-6{right: 18px; top: 178px;} .rs-7{right: 18px; top: 212px;} .rs-8{right: 18px; top: 246px;} .rs-9{right: 18px; top: 280px;} .rs-10{right: 18px; top: 314px;}
+    .rs-11{right: 18px; top: 348px;} .rs-12{right: 18px; top: 382px;} .rs-13{right: 18px; top: 416px;} .rs-14{right: 18px; top: 450px;} .rs-15{right: 18px; top: 484px;} .rs-16{right: 18px; top: 518px;}
+    .vertical-line1{transform: rotate(-90deg); width: 542px; left: -235px; top: 270px;}
+    .vertical-line2{transform: rotate(-90deg); width: 542px; right: -220px; top: 270px;}
+    .risk-head-hash{left: 10px; top: 10px;}
+    .risk-head-riskName{left: 50px; top: 10px;}
+    .risk-head-sel{left: 555px; top: 10px;}
+    .color-white{
+        color: white;
+    }
+    .risk-name{width: 330px; height: 640px; left: 1000px; top: 250px; border-radius: 10px;}
+    .risk-name-title{padding: 20px; font-size: 25px; text-align: center; border-bottom: 1px solid black;}
+</style>
+
+<body>
+    <nav class="head-app border"></nav>
+    <div class="left-div absolute border"></div>
+
+    <div class="risk-head absolute border z-0">
+        <label class="risk-head-hash absolute color-white">##</label> <label class="risk-head-riskName absolute color-white">Risk name</label> <label class="risk-head-sel absolute color-white">Sel.</label>
+        <div class="risk-list relative border z-1">
+            <hr class="absolute vertical-line1">
+            <hr class="absolute vertical-line2">
+            <div class="list-row"><label class="id absolute">01</label><label class="risk-desc absolute" id="rn" onclick="selClick(1)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-1 border"  id="rs-1"  onclick="selClick(1)"></label></label></div>
+            <div class="list-row"><label class="id absolute">02</label><label class="risk-desc absolute" id="rn" onclick="selClick(2)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-2 border"  id="rs-2"  onclick="selClick(2)"></label></label></div>
+            <div class="list-row"><label class="id absolute">03</label><label class="risk-desc absolute" id="rn" onclick="selClick(3)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-3 border"  id="rs-3"  onclick="selClick(3)"></label></label></div>
+            <div class="list-row"><label class="id absolute">04</label><label class="risk-desc absolute" id="rn" onclick="selClick(4)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-4 border"  id="rs-4"  onclick="selClick(4)"></label></label></div>
+            <div class="list-row"><label class="id absolute">05</label><label class="risk-desc absolute" id="rn" onclick="selClick(5)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-5 border"  id="rs-5"  onclick="selClick(5)"></label></label></div>
+            <div class="list-row"><label class="id absolute">06</label><label class="risk-desc absolute" id="rn" onclick="selClick(6)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-6 border"  id="rs-6"  onclick="selClick(6)"></label></label></div>
+            <div class="list-row"><label class="id absolute">07</label><label class="risk-desc absolute" id="rn" onclick="selClick(7)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-7 border"  id="rs-7"  onclick="selClick(7)"></label></label></div>
+            <div class="list-row"><label class="id absolute">08</label><label class="risk-desc absolute" id="rn" onclick="selClick(8)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-8 border"  id="rs-8"  onclick="selClick(8)"></label></label></div>
+            <div class="list-row"><label class="id absolute">09</label><label class="risk-desc absolute" id="rn" onclick="selClick(9)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-9 border"  id="rs-9"  onclick="selClick(9)"></label></label></div>
+            <div class="list-row"><label class="id absolute">10</label><label class="risk-desc absolute" id="rn" onclick="selClick(10)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-10 border" id="rs-10" onclick="selClick(10)"></label></label></div>
+            <div class="list-row"><label class="id absolute">11</label><label class="risk-desc absolute" id="rn" onclick="selClick(11)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-11 border" id="rs-11" onclick="selClick(11)"></label></label></div>
+            <div class="list-row"><label class="id absolute">12</label><label class="risk-desc absolute" id="rn" onclick="selClick(12)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-12 border" id="rs-12" onclick="selClick(12)"></label></label></div>
+            <div class="list-row"><label class="id absolute">13</label><label class="risk-desc absolute" id="rn" onclick="selClick(13)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-13 border" id="rs-13" onclick="selClick(13)"></label></label></div>
+            <div class="list-row"><label class="id absolute">14</label><label class="risk-desc absolute" id="rn" onclick="selClick(14)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-14 border" id="rs-14" onclick="selClick(14)"></label></label></div>
+            <div class="list-row"><label class="id absolute">15</label><label class="risk-desc absolute" id="rn" onclick="selClick(15)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-15 border" id="rs-15" onclick="selClick(15)"></label></label></div>
+            <div class="last-list-row"><label class="id absolute">16</label><label class="risk-desc absolute" id="rn" onclick="selClick(16)">Inventory theft</label><label class="risk-sel-e absolute border"><label class="risk-sel-i rs-16 border" id="rs-16" onclick="selClick(16)"></label></label></div>
+        </div>
+    </div>
+
+    <div class="risk-name border absolute">
+        <div class="risk-name-title">
+            <label id="risk-name">Risk name 1</label>
+        </div>
+    </div>
+</body>
+</html>
