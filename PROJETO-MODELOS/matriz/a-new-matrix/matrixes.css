@@ -1,0 +1,31 @@
+*{margin: 0; font-family: Arial;}
+.matrixes-content{
+    width:1570px;height:800px;
+}
+.risk-matrix{
+    width: 450px;
+    height: 450px;
+}
+.critical-matrix{
+    width: 700px;
+    height: 450px;
+}
+
+[class^="risk-block"]{
+    height: 100px;
+}
+.risk-level-A{
+    background-color: #f23a3d;
+}
+.risk-level-B{
+    background-color: #ffb259;
+}
+.risk-level-C{
+    background-color: #ffde4a;
+}
+.risk-level-D{
+    background-color: #51b045;
+}
+[class^="critical-block"]{
+    height: 40px;
+}
