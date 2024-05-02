@@ -8,90 +8,120 @@
     <link rel="stylesheet" href="matrixes.css">
 </head>
 <body>
-    <div class="matrixes-content container border border-dark position-relative d-flex justify-content-between">
-        <div class="risk-matrix border border-primary d-flex flex-column justify-content-center">
+    <div class="matrixes-content container border border-dark d-flex align-items-center justify-content-between position-absolute">
+        <div class="risk-matrix d-flex flex-column justify-content-center position-relative border border-primary">
             <div class="row mx-0">
-                <div class="risk-block1 d-flex align-items-center justify-content-center border border-light col-3 risk-level-C"></div>
-                <div class="risk-block2 d-flex align-items-center justify-content-center border border-light col-3 risk-level-B"></div>
-                <div class="risk-block3 d-flex align-items-center justify-content-center border border-light col-3 risk-level-A"></div>
-                <div class="risk-block4 d-flex align-items-center justify-content-center border border-light col-3 risk-level-A"></div>
+                <div class="border-left-secondary col-1 d-flex align-items-center">4</div>
+                <div class="risk-block1 d-flex align-items-center justify-content-center border border-light col-2 risk-level-C"></div>
+                <div class="risk-block2 d-flex align-items-center justify-content-center border border-light col-2 risk-level-B"></div>
+                <div class="risk-block3 d-flex align-items-center justify-content-center border border-light col-2 risk-level-A"></div>
+                <div class="risk-block4 d-flex align-items-center justify-content-center border border-light col-2 risk-level-A"></div>
             </div>
             <div class="row mx-0">
+                <div class="border-left-secondary col-1 d-flex align-items-center">3</div>
                 <div class="risk-block5 d-flex align-items-center justify-content-center border border-light col-3 risk-level-C"></div>
                 <div class="risk-block6 d-flex align-items-center justify-content-center border border-light col-3 risk-level-C"></div>
                 <div class="risk-block7 d-flex align-items-center justify-content-center border border-light col-3 risk-level-B"></div>
                 <div class="risk-block8 d-flex align-items-center justify-content-center border border-light col-3 risk-level-A"></div>
             </div>
             <div class="row mx-0">
+                <div class="border-left-secondary col-1 d-flex align-items-center">2</div>
                 <div class="risk-block9  d-flex align-items-center justify-content-center border border-light col-3 risk-level-D"></div>
                 <div class="risk-block10 d-flex align-items-center justify-content-center border border-light col-3 risk-level-C"></div>
                 <div class="risk-block11 d-flex align-items-center justify-content-center border border-light col-3 risk-level-C"></div>
                 <div class="risk-block12 d-flex align-items-center justify-content-center border border-light col-3 risk-level-B"></div>
             </div>
             <div class="row mx-0">
+                <div class="border-left-secondary col-1 d-flex align-items-center">1</div>
                 <div class="risk-block13 d-flex align-items-center justify-content-center border border-light col-3 risk-level-D"></div>
                 <div class="risk-block14 d-flex align-items-center justify-content-center border border-light col-3 risk-level-D"></div>
                 <div class="risk-block15 d-flex align-items-center justify-content-center border border-light col-3 risk-level-C"></div>
                 <div class="risk-block16 d-flex align-items-center justify-content-center border border-light col-3 risk-level-B"></div>
             </div>
+            <div class="row mx-0">
+                <div class="col-1"></div>
+                <div class="border-bottom-secondary risk-matrix-impact-number d-flex justify-content-center col-3">1</div>
+                <div class="border-bottom-secondary risk-matrix-impact-number d-flex justify-content-center col-3">2</div>
+                <div class="border-bottom-secondary risk-matrix-impact-number d-flex justify-content-center col-3">3</div>
+                <div class="border-bottom-secondary risk-matrix-impact-number d-flex justify-content-center col-3">4</div>
+            </div>
         </div>
 
-        <div class="critical-matrix border border-success d-flex flex-column justify-content-center">
+        <div class="critical-matrix border border-success d-flex flex-column justify-content-center position-relative">
             <div class="row mx-0">
-                <div class="critical-block1 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block2 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block3 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block4 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block5 d-flex align-items-center justify-content-center border border-primary col-2"></div>
+                <div class="critical-matrix-impact-first col-1 d-flex align-items-end">5,00</div>
             </div>
             <div class="row mx-0">
-                <div class="critical-block6  d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block7  d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block8  d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block9  d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block10 d-flex align-items-center justify-content-center border border-primary col-2"></div>
+                <div class="critical-matrix-impact col-1 d-flex align-items-end">4,51</div>
+                <div class="critical-block1 d-flex align-items-center justify-content-center all-border-danger border-top-left-danger col-2"></div>
+                <div class="critical-block2 d-flex align-items-center justify-content-center all-border-danger border-top-right-danger col-2"></div>
+                <div class="critical-block3 d-flex align-items-center justify-content-center all-border-alert border-top-alert col-2"></div>
+                <div class="critical-block4 d-flex align-items-center justify-content-center all-border-alert border-top-alert col-2"></div>
+                <div class="critical-block5 d-flex align-items-center justify-content-center all-border-alert border-top-right-alert col-2"></div>
             </div>
             <div class="row mx-0">
-                <div class="critical-block11 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block12 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block13 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block14 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block15 d-flex align-items-center justify-content-center border border-primary col-2"></div>
+                <div class="critical-matrix-impact col-1 d-flex align-items-end">4,00</div>
+                <div class="critical-block6  d-flex align-items-center justify-content-center all-border-danger border-left-danger col-2"></div>
+                <div class="critical-block7  d-flex align-items-center justify-content-center all-border-danger border-right-danger col-2"></div>
+                <div class="critical-block8  d-flex align-items-center justify-content-center all-border-alert col-2"></div>
+                <div class="critical-block9  d-flex align-items-center justify-content-center all-border-alert col-2"></div>
+                <div class="critical-block10 d-flex align-items-center justify-content-center all-border-alert border-right-alert col-2"></div>
             </div>
             <div class="row mx-0">
-                <div class="critical-block16 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block17 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block18 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block19 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block20 d-flex align-items-center justify-content-center border border-primary col-2"></div>
+                <div class="critical-matrix-impact col-1 d-flex align-items-end">3,51</div>
+                <div class="critical-block11 d-flex align-items-center justify-content-center all-border-danger border-bottom-left-danger col-2"></div>
+                <div class="critical-block12 d-flex align-items-center justify-content-center all-border-danger border-bottom-right-danger col-2"></div>
+                <div class="critical-block13 d-flex align-items-center justify-content-center all-border-alert col-2"></div>
+                <div class="critical-block14 d-flex align-items-center justify-content-center all-border-alert col-2"></div>
+                <div class="critical-block15 d-flex align-items-center justify-content-center all-border-alert border-right-alert col-2"></div>
             </div>
             <div class="row mx-0">
-                <div class="critical-block21 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block22 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block23 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block24 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block25 d-flex align-items-center justify-content-center border border-primary col-2"></div>
+                <div class="critical-matrix-impact col-1 d-flex align-items-end">3,00</div>
+                <div class="critical-block16 d-flex align-items-center justify-content-center all-border-alert border-left-alert col-2"></div>
+                <div class="critical-block17 d-flex align-items-center justify-content-center all-border-alert col-2"></div>
+                <div class="critical-block18 d-flex align-items-center justify-content-center all-border-alert col-2"></div>
+                <div class="critical-block19 d-flex align-items-center justify-content-center all-border-alert col-2"></div>
+                <div class="critical-block20 d-flex align-items-center justify-content-center all-border-alert border-right-alert col-2"></div>
             </div>
             <div class="row mx-0">
-                <div class="critical-block26 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block27 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block28 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block29 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block30 d-flex align-items-center justify-content-center border border-primary col-2"></div>
+                <div class="critical-matrix-impact col-1 d-flex align-items-end">2,51</div>
+                <div class="critical-block21 d-flex align-items-center justify-content-center all-border-alert border-bottom-left-alert col-2"></div>
+                <div class="critical-block22 d-flex align-items-center justify-content-center all-border-alert border-bottom-alert col-2"></div>
+                <div class="critical-block23 d-flex align-items-center justify-content-center all-border-alert border-bottom-alert col-2"></div>
+                <div class="critical-block24 d-flex align-items-center justify-content-center all-border-alert border-bottom-alert col-2"></div>
+                <div class="critical-block25 d-flex align-items-center justify-content-center all-border-alert border-bottom-right-alert col-2"></div>
             </div>
             <div class="row mx-0">
-                <div class="critical-block31 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block32 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block33 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block34 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block35 d-flex align-items-center justify-content-center border border-primary col-2"></div>
+                <div class="critical-matrix-impact col-1 d-flex align-items-end">2,00</div>
+                <div class="critical-block26 d-flex align-items-center justify-content-center all-border-info border-top-left-info col-2"></div>
+                <div class="critical-block27 d-flex align-items-center justify-content-center all-border-info border-top-info col-2"></div>
+                <div class="critical-block28 d-flex align-items-center justify-content-center all-border-info border-top-info col-2"></div>
+                <div class="critical-block29 d-flex align-items-center justify-content-center all-border-info border-top-info col-2"></div>
+                <div class="critical-block30 d-flex align-items-center justify-content-center all-border-info border-top-right-info col-2"></div>
             </div>
             <div class="row mx-0">
-                <div class="critical-block36 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block37 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block38 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block39 d-flex align-items-center justify-content-center border border-primary col-2"></div>
-                <div class="critical-block40 d-flex align-items-center justify-content-center border border-primary col-2"></div>
+                <div class="critical-matrix-impact col-1 d-flex align-items-end">1,51</div>
+                <div class="critical-block31 d-flex align-items-center justify-content-center all-border-info border-left-info col-2"></div>
+                <div class="critical-block32 d-flex align-items-center justify-content-center all-border-info col-2"></div>
+                <div class="critical-block33 d-flex align-items-center justify-content-center all-border-info col-2"></div>
+                <div class="critical-block34 d-flex align-items-center justify-content-center all-border-info col-2"></div>
+                <div class="critical-block35 d-flex align-items-center justify-content-center all-border-info border-right-info col-2"></div>
+            </div>
+            <div class="row mx-0">
+                <div class="critical-matrix-impact col-1 d-flex align-items-end">1,00</div>
+                <div class="critical-block36 d-flex align-items-center justify-content-center all-border-info border-bottom-left-info col-2"></div>
+                <div class="critical-block37 d-flex align-items-center justify-content-center all-border-info border-bottom-info col-2"></div>
+                <div class="critical-block38 d-flex align-items-center justify-content-center all-border-info border-bottom-info col-2"></div>
+                <div class="critical-block39 d-flex align-items-center justify-content-center all-border-info border-bottom-info col-2"></div>
+                <div class="critical-block40 d-flex align-items-center justify-content-center all-border-info border-bottom-right-info col-2"></div>
+            </div>
+            <div class="row mx-0">
+                <div class="critical-matrix-time col-1">0-4 h</div>
+                <div class="critical-matrix-time col-2">1 d</div>
+                <div class="critical-matrix-time text-align-center col-2">2 d</div>
+                <div class="critical-matrix-time text-align-center col-2">7 d</div>
+                <div class="critical-matrix-time text-align-end col-2">14 d</div>
+                <div class="critical-matrix-time text-align-end col-2">+15 d</div>
             </div>
             
         </div>
