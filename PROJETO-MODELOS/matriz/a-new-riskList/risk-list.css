@@ -42,3 +42,12 @@
     background-color: rgb(216, 216, 218);
     cursor: pointer;
 }
+.risk-texts{
+    text-align: justify;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 50px;
+}
+.font-risk-name{
+    font-size: 25px;
+}
