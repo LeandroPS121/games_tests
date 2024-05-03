@@ -2,7 +2,7 @@
 .matrixes-content{
     width:1570px;
     height:800px;
-    right: 10%;
+    right: -100px;
 }
 .risk-matrix{
     width: 450px;
@@ -141,21 +141,26 @@
 }
 
 .critical-matrix-time{
+    position: relative;
     height: 30px;
     width: 14%;
     font-size: 12px;
     margin-top: 5px;
     padding: 0px;
     position: relative;
-    left: 50px;
+    left: 57px;
     border-top: 1px solid gray;
 }
 .critical-matrix-impact{
+    position: relative;
+    top: 5px;
     font-size: 10px;
     margin-right: 5px;
     border-right: 1px solid gray;
 }
 .critical-matrix-impact-first{
+    position: relative;
+    top: 5px;
     font-size: 10px;
     margin-right: 5px;
 }
@@ -167,4 +172,42 @@
 }
 .text-align-end{
     text-align: end;
+}
+
+.subtitle-tables{
+    top: 50px;
+}
+.table-subtitle{
+    font-size: 12px;
+}
+.text-orange{
+    color: orange;
+}
+.roman-number-style{
+    position: relative;
+    font-size: 50px;
+    color: rgb(126, 125, 125);
+    opacity: 0.7;
+}
+.roman-top{
+    top: 25px;
+    right: 10px;
+}
+.roman-below{
+    top: -40px;
+}
+.likehood-subtitle{
+    position: relative;
+    transform: rotate(-90deg);
+    left: -100px;
+    top: 150px;
+    font-size: 25px;
+    color: gray;
+}
+.impact-subtitle{
+    position: relative;
+    left: -150px;
+    top: 90px;
+    font-size: 25px;
+    color: gray;
 }
