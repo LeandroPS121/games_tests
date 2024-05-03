@@ -10,6 +10,5 @@ function selClick(i){
     let risk_name = document.getElementById('rd-'+i).innerHTML
     document.getElementById(id_sel).style.backgroundColor = 'black'
     document.getElementById('risk-name').innerHTML = risk_name
-    //i
     document.getElementById(risk).style.display = 'block'
 }

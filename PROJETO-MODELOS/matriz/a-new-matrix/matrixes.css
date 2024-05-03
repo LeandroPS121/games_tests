@@ -211,3 +211,40 @@
     font-size: 25px;
     color: gray;
 }
+.business-subtitle{
+    position: relative;
+    transform: rotate(-90deg);
+    font-size: 15px;
+    text-align: center;
+    left: -140px;
+    top: 20px;
+}
+.time-subtitle{
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    top: 90px;
+}
+.subtitle-right{
+    position: relative;
+    font-size: 10px;
+    right: -100px;
+}
+.massive-severe-top{
+    top: 60px;
+}
+.moderate-top{
+    top: 22px;
+}
+.low-insignificant-top{
+    top: 20px;
+}
+.temperature-critical-font{
+    color: gray;
+    font-size: 20px;
+    opacity: 0.6;
+}
+.hot-temperature{
+    position: relative;
+    left: 57px;
+}
