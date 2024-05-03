@@ -8,8 +8,9 @@
     width: 600px;
 }
 .risk-description{
-    width: 600px;
+    width: 450px;
     height: 650px;
+    border-radius: 15px;
 }
 .list-content-font{
     border: 1px solid black;
@@ -28,4 +29,16 @@
     height: 27px;
     border: 2px solid black;
     left: 4px;
+}
+.head-list-font{
+    background-color: rgb(81, 81, 252);
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.list-row:hover{
+    background-color: rgb(216, 216, 218);
+    cursor: pointer;
 }

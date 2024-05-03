@@ -5,142 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="risk-list.css">
+    <script src="risk-list-script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="risk-list-content container-fluid d-flex justify-content-around align-items-center border border-primary">
-        <div class="risk-list border border-info">
-            <div class="row mx-0">
+        <div class="risk-list">
+            <div class="row mx-0 head-list-font d-flex align-items-center">
+                <div class="col-1 text-center">##</div>
+                <div id="rd-1" class="col-10">Risk Name</div>
+                <div class="col-1">Sel.</div>
+            </div>
+            <div class="list-row row mx-0" onclick="selClick(1)">
                 <div class="col-1 list-content-font text-center">01</div>
-                <div class="col-10 list-content-font">Inventory theft</div>
+                <div id="rd-2" class="col-10 list-content-font">Inventory theft</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-1" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(2)">
                 <div class="col-1 list-content-font text-center">02</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-3" class="col-10 list-content-font">Collusion Risk Among Employees</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-2" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(3)">
                 <div class="col-1 list-content-font text-center">03</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-4" class="col-10 list-content-font">Cargo Theft</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-3" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(4)">
                 <div class="col-1 list-content-font text-center">04</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-5" class="col-10 list-content-font">Workplace Harassment</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-4" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(5)">
                 <div class="col-1 list-content-font text-center">05</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-6" class="col-10 list-content-font">Firearm attack or active shooting</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-5" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(6)">
                 <div class="col-1 list-content-font text-center">06</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-7" class="col-10 list-content-font">Blackout</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-6" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(7)">
                 <div class="col-1 list-content-font text-center">07</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-8" class="col-10 list-content-font">Sabotage of Firefighting System</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-7" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(8)">
                 <div class="col-1 list-content-font text-center">08</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-9" class="col-10 list-content-font">Disagreement / Fights</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-8" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(9)">
                 <div class="col-1 list-content-font text-center">09</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-10" class="col-10 list-content-font">Delivery Disruption and Theft</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-9" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(10)">
                 <div class="col-1 list-content-font text-center">10</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-11" class="col-10 list-content-font">Theft of Equipment/ Maintenance Material</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-10" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(11)">
                 <div class="col-1 list-content-font text-center">11</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-12" class="col-10 list-content-font">Theft of Warehouse Products</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-11" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(12)">
                 <div class="col-1 list-content-font text-center">12</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-13" class="col-10 list-content-font">Homicide at the Distribution Center</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-12" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(13)">
                 <div class="col-1 list-content-font text-center">13</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-14" class="col-10 list-content-font">Instrusion at the Distribution Center</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-13" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(14)">
                 <div class="col-1 list-content-font text-center">14</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-15" class="col-10 list-content-font">-</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-14" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(15)">
                 <div class="col-1 list-content-font text-center">15</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-16" class="col-10 list-content-font">-</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-15" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
-            <div class="row mx-0">
+            <div class="list-row row mx-0" onclick="selClick(16)">
                 <div class="col-1 list-content-font text-center">16</div>
-                <div class="col-10 list-content-font">testing</div>
+                <div id="rd-1" class="col-10 list-content-font">-</div>
                 <div class="col-1 list-content-font p-1 d-flex align-items-center">
                     <div class="sel-ext position-absolute z-0"></div>
-                    <div class="sel-in position-relative z-1"></div>
+                    <div id="rs-16" class="sel-in position-relative z-1"></div>
                 </div>
             </div>
         </div>
 
-        <div class="risk-description border border-info">
+        <div class="risk-description border border-dark">
 
         </div>
     </div>
