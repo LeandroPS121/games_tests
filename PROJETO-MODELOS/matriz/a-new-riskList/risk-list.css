@@ -51,3 +51,7 @@
 .font-risk-name{
     font-size: 25px;
 }
+#risk-name{
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
