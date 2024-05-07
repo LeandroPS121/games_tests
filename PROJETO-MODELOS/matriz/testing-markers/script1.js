@@ -1,13 +1,9 @@
-function createParagraph(){
-  let text = document.getElementById('text-test').value
-  if(text != "" && (text>0 && text<10)){
+function createDiv(){
+  let number = document.getElementById('text-test').value
+  if(number != "" && (number>0 && number<10)){
     const div = document.createElement('div')
-    document.body.appendChild(div)
-    div.style.position = 'relative'
-    div.style.width = '10px'
-    div.style.height = '10px'
-    div.style.borderRadius = '50px'
-    div.style.backgroundColor = 'blue'
-    document.getElementById("risk-cell"+text).appendChild(div)
+    div.className = "grid-item"
+    div.textContent = 'R1'
+    document.getElementById("risk-cell"+number).appendChild(div)
   }
 }
