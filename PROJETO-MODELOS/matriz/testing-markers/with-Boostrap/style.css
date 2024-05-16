@@ -1,0 +1,35 @@
+body{
+    padding: 25px;
+}
+.risk-matrix-table,tr,td{
+    width: 600px;
+    height: 150px;
+    max-width: 600px;
+    max-height: 150px;
+}
+td{
+    position: relative;
+    width: 25%;
+    height: 25%;
+    padding: 0;
+    margin: 0;
+}
+.marker-place{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.marker{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,32 @@
+.R_contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+}
+.R_main{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}
+.main{
+    height: 100vh;
+    padding: 15px;
+    position: relative;
+}
+.r_style{
+    position: relative;
+    bottom: 40px;
+}
