@@ -1,7 +1,5 @@
 Jogo - ODS - 13
 
-18 - 4 = 14
-
 
 	Introdução:
 1)serão escritas 12 palavras no quadro.
@@ -13,7 +11,7 @@ Jogo - ODS - 13
 3.2)os 4 mestres formarão 2 times, um que vai ajudar e outro que vai atrapalhar.
 3.3)Apenas os mestres saberão quem pertence a qual time.
 3.3)os 14 que sobrarem formação 3 grupos.
-3.4)Apenas eu e os mestres saberão qual é a palavra sorteada.
+3.4)Apenas os mestres saberão qual é a palavra sorteada.
 
 	Funcionamento do jogo:
 4)funcionará em 5 rodadas.
@@ -26,4 +24,20 @@ Jogo - ODS - 13
 6)as 3 equipes dirão uma palavra que julgam ser a certa a cada rodada.
 6.1)a cada nova rodada as equipes podem escolher uma nova palavra ou a mesma.
 
-7)no final do jogo, para cada palavra dita pelas equipes de forma correta, será somado 1 ponto para a equipe. A equipe com mais pontos vence
+7)no final do jogo, para cada palavra dita pelas equipes de forma correta, será somado 1 ponto para a equipe. A equipe com mais pontos vence.
+
+
+Palavras:
+
+1.Clima
+2.Aquecimento global
+3.Carbono
+4.Emissões
+5.Energia renovável
+6.Desmatamento
+7.Adaptabilidade
+8.Resiliência
+9.Mitigação
+10.Poluição
+11.Sustentabilidade
+12.Ecossistema
