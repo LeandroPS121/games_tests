@@ -1,0 +1,29 @@
+Jogo - ODS - 13
+
+18 - 4 = 14
+
+
+	Introdução:
+1)serão escritas 12 palavras no quadro.
+
+2)O objetivo do jogo será acertar a palavra sorteada dentre as palavras do quadro.
+
+3)18 jogadores (19 caso o professor se junte).
+3.1)dos 18 jogadores serão solicitados 4 voluntarios para ser os "Mestres" do jogo.
+3.2)os 4 mestres formarão 2 times, um que vai ajudar e outro que vai atrapalhar.
+3.3)Apenas os mestres saberão quem pertence a qual time.
+3.3)os 14 que sobrarem formação 3 grupos.
+3.4)Apenas eu e os mestres saberão qual é a palavra sorteada.
+
+	Funcionamento do jogo:
+4)funcionará em 5 rodadas.
+
+5)cada time ficará na primeira fileira.
+5.1)cada time falará 1 palavra em cada rodada.
+5.2)o time que ajudará, falará uma palavra a cada rodada(que não está no quadro) para ajudar a turma a adivinhar.
+5.3)o time que atrapalhará, falará qualquer palavra que quiser a cada rodada para atrapalhar.
+
+6)as 3 equipes dirão uma palavra que julgam ser a certa a cada rodada.
+6.1)a cada nova rodada as equipes podem escolher uma nova palavra ou a mesma.
+
+7)no final do jogo, para cada palavra dita pelas equipes de forma correta, será somado 1 ponto para a equipe. A equipe com mais pontos vence
