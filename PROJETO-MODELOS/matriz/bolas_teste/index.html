@@ -9,14 +9,27 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- <div class="main">
+        <div class="R_contents">
+            <div id="r_markers-content" class="container-fluid border border-primary d-flex wrap justify-content-around position-absolute top-0">
+                <button class="r_markers">R2</button>
+                <button class="r_markers">R2</button>
+                <button class="r_markers">R2</button>
+            </div>
+            <button class="marker" id="R_main" onclick="showMarkers()" onblur="hideMarkers()">R1</button>
+        </div>
+    </div> -->
+
     <div class="main">
         <div class="R_contents">
-            <div style="display: none;" id="R2">
-                testeteste
+            <div class="container-fluid d-flex wrap justify-content-around position-absolute top-0">
+                <button class="marker r_markers" style="display: none;">R2</button>
+                <button class="marker r_markers" style="display: none;">R2</button>
+                <button class="marker r_markers" style="display: none;">R2</button>
+                <button class="marker r_markers" style="display: none;">R2</button>
+                <button class="marker r_markers" style="display: none;">R2</button>
             </div>
-            <button class="R_main" id="R_main" onclick="showMarkers()" onblur="hideMarkers()">
-                R1
-            </button>
+            <button class="marker" id="R_main" onclick="showMarkers()" onblur="hideMarkers()"></button>
         </div>
     </div>
 </body>
