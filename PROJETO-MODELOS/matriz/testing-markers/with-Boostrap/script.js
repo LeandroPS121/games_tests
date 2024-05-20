@@ -14,7 +14,7 @@ function createDoors(){
         doors_line_4.push(0);
     }
 }
-function verifyRepeatedMarker(integerX,integerY){
+function addMarkerInList(integerX,integerY){
     switch (integerY) {
         case 1:
             doors_line_1[--integerX]++
@@ -29,11 +29,20 @@ function verifyRepeatedMarker(integerX,integerY){
             doors_line_4[--integerX]++
             break;
     }
-    alert(doors_line_1)
-    alert(doors_line_2)
-    alert(doors_line_3)
-    alert(doors_line_4)
+    // positionMarker()
 }
+
+// function positionMarker(){
+//     var position_left = 0;
+//     for (var i = 0; i < 4 ; i++){
+//         if (doors_line_1[i] > 0) {
+//             position_left += 20;
+//             document.getElementById(`marker_place-1-${++i}`).style.left = "20px";
+//             alert('ok')
+//         }
+//     }
+// }
+
 function addMarker(){
     const x = document.getElementById('x').value;
     const y = document.getElementById('y').value;
@@ -41,15 +50,16 @@ function addMarker(){
     const decimalX = x - Math.floor(x);
     const decimalY = y - Math.floor(y);
 
-    const integerX = x - decimalX
-    const integerY = y - decimalY
+    const integerX = x - decimalX;
+    const integerY = y - decimalY;
     
     const marker_place = document.createElement('div');
     const marker = document.createElement('div');
     
     marker.className = "marker";
-    marker.textContent = `R${count}`
+    marker.textContent = `R${count}`;
     marker_place.className = "marker-place";
+    marker_place.id = `marker_place-${integerX}-${integerY}`;
 
     //////////////////////////////////////////////////
     // Aplicar na matriz crítica
@@ -58,9 +68,9 @@ function addMarker(){
 
     marker_place.style.left = "50%";
     marker_place.style.bottom = "50%";
+    marker_place.appendChild(marker);
 
-    marker_place.appendChild(marker)
-    document.getElementById('risk-cell-'+integerX+'-'+integerY).appendChild(marker_place) //Só considera o valor inteiro na hora do append, (a parte com virgula será utilizada na outra matriz)
-    count++
-    verifyRepeatedMarker(integerX,integerY);
+    addMarkerInList(integerX,integerY);
+    document.getElementById('risk-cell-'+integerX+'-'+integerY).appendChild(marker_place); //Só considera o valor inteiro na hora do append, (a parte com virgula será utilizada na outra matriz)
+    count++;
 }
