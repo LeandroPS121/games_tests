@@ -1,47 +1,14 @@
-var count = 1
-var doors_line_1 = [];
-var doors_line_2 = [];
-var doors_line_3 = [];
-var doors_line_4 = [];
+var count = 1;
 
-createDoors()
+var cell_list1 = [0,0,0,0];
+var cell_list2 = [0,0,0,0];
+var cell_list3 = [0,0,0,0];
+var cell_list4 = [0,0,0,0];
 
-function createDoors(){
-    for(let i=0; i<4; i++){
-        doors_line_1.push(0);
-        doors_line_2.push(0);
-        doors_line_3.push(0);
-        doors_line_4.push(0);
-    }
-}
-function addMarkerInList(integerX,integerY){
-    switch (integerY) {
-        case 1:
-            doors_line_1[--integerX]++
-            break;
-        case 2:
-            doors_line_2[--integerX]++
-            break;
-        case 3:
-            doors_line_3[--integerX]++
-            break;
-        case 4:
-            doors_line_4[--integerX]++
-            break;
-    }
-    // positionMarker()
-}
-
-// function positionMarker(){
-//     var position_left = 0;
-//     for (var i = 0; i < 4 ; i++){
-//         if (doors_line_1[i] > 0) {
-//             position_left += 20;
-//             document.getElementById(`marker_place-1-${++i}`).style.left = "20px";
-//             alert('ok')
-//         }
-//     }
-// }
+// var cell_positionList1 = [50,50,50,50];
+// var cell_positionList2 = [50,50,50,50];
+// var cell_positionList3 = [50,50,50,50];
+// var cell_positionList4 = [50,50,50,50];
 
 function addMarker(){
     const x = document.getElementById('x').value;
@@ -55,22 +22,88 @@ function addMarker(){
     
     const marker_place = document.createElement('div');
     const marker = document.createElement('div');
+    // const div_container = document.createElement('div');
     
     marker.className = "marker";
     marker.textContent = `R${count}`;
     marker_place.className = "marker-place";
-    marker_place.id = `marker_place-${integerX}-${integerY}`;
+    // div_container.className = "container-div d-flex align-items-center justify-content-around border border-primary";
 
-    //////////////////////////////////////////////////
-    // Aplicar na matriz crítica
-    // marker_place.style.left = `${decimalX*100}%`;
-    // marker_place.style.bottom = `${decimalY*100}%`;
+            //////////////////////////////////////////////////
+            // Aplicar na matriz crítica
+            // marker_place.style.left = `${decimalX*100}%`;
+            // marker_place.style.bottom = `${decimalY*100}%`;
 
-    marker_place.style.left = "50%";
-    marker_place.style.bottom = "50%";
+            // marker_place.style.left = "50%";
+            // marker_place.style.bottom = "50%";
+
+    // div_container.appendChild(marker_place);
     marker_place.appendChild(marker);
 
-    addMarkerInList(integerX,integerY);
-    document.getElementById('risk-cell-'+integerX+'-'+integerY).appendChild(marker_place); //Só considera o valor inteiro na hora do append, (a parte com virgula será utilizada na outra matriz)
+    div_content = verifyRepeatMarker(integerX,integerY,marker_place);
+
+    document.getElementById('risk-cell-'+integerX+'-'+integerY).appendChild(div_content); //Só considera o valor inteiro na hora do append, (a parte com virgula será utilizada na outra matriz)
     count++;
+        // addMarkerInCellList(integerX,integerY);
+}
+
+function addMarkerInCellList(x,y){
+    switch (x){
+        case 1:
+            cell_list1[y-1]++;
+            break;
+        case 2:
+            cell_list2[y-1]++;
+            break;
+        case 3:
+            cell_list3[y-1]++;
+            break;
+        case 4:
+            cell_list4[y-1]++;
+            break;
+    }
+}
+function verifyRepeatMarker(x,y,mk_place){
+    switch (x){
+        case 1:
+            if(cell_list1[y-1] == 0){
+                const div_container = document.createElement('div');
+                div_container.className = "container-div d-flex align-items-center justify-content-around border border-primary";
+                div_container.id = `container_div-${x}-${y}`;
+                return div_container.appendChild(mk_place);
+            } else{
+                return div_container.appendChild(mk_place)
+            }
+            
+        case 2:
+            if(cell_list2[y-1] == 0){
+                const div_container = document.createElement('div');
+                div_container.className = "container-div d-flex align-items-center justify-content-around border border-primary";
+                div_container.id = `container_div-${x}-${y}`;
+                return div_container.appendChild(mk_place);
+            } else{
+                return div_container.appendChild(mk_place)
+            }
+            
+        case 3:
+            if(cell_list3[y-1] == 0){
+                const div_container = document.createElement('div');
+                div_container.className = "container-div d-flex align-items-center justify-content-around border border-primary";
+                div_container.id = `container_div-${x}-${y}`;
+                return div_container.appendChild(mk_place);
+            } else{
+                return div_container.appendChild(mk_place)
+            }
+            
+        case 4:
+            if(cell_list4[y-1] == 0){
+                const div_container = document.createElement('div');
+                div_container.className = "container-div d-flex align-items-center justify-content-around border border-primary";
+                div_container.id = `container_div-${x}-${y}`;
+                return div_container.appendChild(mk_place);
+            } else{
+                return div_container.appendChild(mk_place)
+            }
+            
+    }
 }
