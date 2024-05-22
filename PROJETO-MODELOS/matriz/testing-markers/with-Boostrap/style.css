@@ -4,31 +4,30 @@ body{
 .risk-matrix-table,tr,td{
     width: 600px;
     height: 150px;
-    max-width: 600px;
-    max-height: 150px;
 }
 td{
+    background-color: rgb(72, 190, 62);
+    border: 1px solid white;
     position: relative;
-    width: 25%;
-    height: 25%;
+    max-width: 150px;
+    max-height: 37.5px;
     padding: 0;
     margin: 0;
 }
-.marker-place{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cell{
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
 }
 .marker{
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-color: black;
+    width: 30px;
+    height: 30px;
+    background-color: darkred;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 50px;
     color: white;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,3 +36,9 @@ td{
     height: 20px;
     width: 100%;
 }
+    /* .marker-place{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
