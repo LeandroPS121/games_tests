@@ -9,9 +9,9 @@ var marker_list7 = [0,0,0,0,0];
 var marker_list8 = [0,0,0,0,0];
 
 var data = {
-    'n': ['A','B','C'],
-    'x':[1,8,3],
-    'y':[1,5,4]
+    'n': ['R10','R1','R2'],
+    'x':[7,8,6],
+    'y':[5,5,5]
 };
 
 function forData()
