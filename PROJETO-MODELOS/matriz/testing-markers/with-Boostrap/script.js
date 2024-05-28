@@ -8,93 +8,122 @@ var marker_list6 = [0,0,0,0,0];
 var marker_list7 = [0,0,0,0,0];
 var marker_list8 = [0,0,0,0,0];
 
-// var data = {
-//     'n': ['A','B','C'],
-//     'x':[1,2,3],
-//     'y':[1,2,3]
-// };
-
-//var dataCpm={{cpm|safe}};
-//var dataRm={{rm|safe}};
-//var dataRit={{rit|safe}};
+var data = {
+    'n': ['A','B','C'],
+    'x':[1,8,3],
+    'y':[1,5,4]
+};
 
 function forData()
 {
-    for (let i = 0; i < data.n.length; i++){
+    for (let i = 0; i < data.x.length; i++){
         const marker = document.createElement('button');
+        const marker_content = document.createElement('div');
+
+        marker_content.className = 'marker-content';
         marker.className = 'm-2 marker';
         marker.textContent = data.n[i];
-        addMarker(data.x[i],data.y[i],marker);
+        addMarker(data.x[i],data.y[i],marker,marker_content);
     }
 }
 
-function addMarkerInList(x,y)
+function addMarker(x,y,marker,marker_content)
 {
-    var intX = Math.floor(x);
-    var decimalX = x-intX;
+    var p = 8/5;
+    var switchX = Number(Math.floor(x));
+    var posX = (x-switchX) * p;
 
-    var intY = Math.floor(y);
-    var decimalY = y-intY;
-    switch (x) {
-        case 1:
-            marker_list1[y] += 1;
-        break;
-        case 2:
-            marker_list2[y] += 1;
-        break;
-        case 3:
-            marker_list3[y] += 1;
-        break;
-        case 4:
-            marker_list4[y] += 1;
-        break;
-        case 5:
-            marker_list5[y] += 1;
-        break;
-        case 6:
-            marker_list6[y] += 1;
-        break;
-        case 7:
-            marker_list7[y] += 1;
-        break;
-        case 8:
-            marker_list8[y] += 1;
-        break;
-    }
-}
+    var switchY = Number(Math.floor(y));
+    var posY = y-switchY;
+    marker_content.appendChild(marker);
 
-function addMarker(x,y,marker)
-{
+    // marker_content.style.left = `${decimalY*100}px`;
+    // marker_content.style.bottom = `${decimalX*100}px`;
+
     count++;
     console.log("X = " + x + "  | Y = " + y);
-    y -= 1;
-    switch (x){
+    switchY -= 1;
+    switch (switchX){
         case 1:
-            marker_list1[y]++;
-            if(marker_list1[y]<=9){
-                document.getElementById(`risk-cell-${x}-${y+1}`).appendChild(marker);
+
+            // function distance(x,y,newMarker)
+            // {
+            //     reference = document.getElementById(`critical-cell-${intX}-${intY}`);
+            //     if (reference.hasChildNodes())
+            //         {
+            //             reference.appendChild(newMarker);
+            //         }
+            // }
+
+         /*
+
+            Para calcular o x e y da matriz de processo,
+            é necessário converter cada ponto para equivaler
+            ao número de divs existentes na matriz. Temos 8
+            divs em x e y, enquanto que o valor máximo que
+            podemos definir de acordo com o BIA é 5. Apesar
+            disso, nosso valor mínimo é 1. Precisamos de uma
+            tratativa que compreende o valor máximo sendo 5,
+            mas para que não afete o posicionamento correto
+            na matriz, não tenha valores menores que 1.
+
+            Sugiro que multipliquemos o valor lido, e quando
+            (leitura > 1), então (recebe decimal) && (adiciona 1);
+
+            8/5 = 1,6;
+
+            p (1,6) = cada ponto a ser posicionado na matriz conforme a leitura.
+
+         */
+
+            marker_list1[switchY]++;
+            if(marker_list1[switchY]<=9){
+                document.getElementById(`critical-cell-${switchX}-${switchY+1}`).appendChild(marker_content);
             }
             break;
         case 2:
-            marker_list2[y]++;
-            if(marker_list2[y]<=9){
-                document.getElementById(`risk-cell-${x}-${y+1}`).appendChild(marker);
+            marker_list2[switchY]++;
+            if(marker_list2[switchY]<=9){
+                document.getElementById(`critical-cell-${switchX}-${switchY+1}`).appendChild(marker_content);
             }
             break;
         case 3:
-            marker_list3[y]++;
-            if(marker_list3[y]<=9){
-                document.getElementById(`risk-cell-${x}-${y+1}`).appendChild(marker);
+            marker_list3[switchY]++;
+            if(marker_list3[switchY]<=9){
+                document.getElementById(`critical-cell-${switchX}-${switchY+1}`).appendChild(marker_content);
             }
             break;
         case 4:
-            marker_list4[y]++;
-            if(marker_list4[y]<=9){
-                document.getElementById(`risk-cell-${x}-${y+1}`).appendChild(marker);
+            marker_list4[switchY]++;
+            if(marker_list4[switchY]<=9){
+                document.getElementById(`critical-cell-${switchX}-${switchY+1}`).appendChild(marker_content);
+            }
+            break;
+        case 5:
+            marker_list5[switchY]++;
+            if(marker_list1[switchY]<=9){
+                document.getElementById(`critical-cell-${switchX}-${switchY+1}`).appendChild(marker_content);
+            }
+            break;
+        case 6:
+            marker_list6[switchY]++;
+            if(marker_list2[switchY]<=9){
+                document.getElementById(`critical-cell-${switchX}-${switchY+1}`).appendChild(marker_content);
+            }
+            break;
+        case 7:
+            marker_list7[switchY]++;
+            if(marker_list3[switchY]<=9){
+                document.getElementById(`critical-cell-${switchX}-${switchY+1}`).appendChild(marker_content);
+            }
+            break;
+        case 8:
+            marker_list8[switchY]++;
+            if(marker_list4[switchY]<=9){
+                document.getElementById(`critical-cell-${switchX}-${switchY+1}`).appendChild(marker_content);
             }
             break;
     }
-    addMarkerInList(x,y);
     marker.setAttribute("data-title", count);
 }
 

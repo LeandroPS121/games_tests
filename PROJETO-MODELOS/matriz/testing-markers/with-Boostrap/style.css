@@ -1,33 +1,12 @@
 *{margin: 0; font-family: Arial;}
-.matrixes-content{
-    width:1570px;
-    height:800px;
-    right: -100px;
-}
-.risk-matrix{
-    width: 450px;
-    height: 450px;
-}
 .critical-matrix{
     width: 700px;
     height: 450px;
 }
-
-[class^="risk-block"]{
-    height: 100px;
-    width: 22%;
-}
-.risk-level-A{
-    background-color: #f23a3d;
-}
-.risk-level-B{
-    background-color: #ffb259;
-}
-.risk-level-C{
-    background-color: #ffde4a;
-}
-.risk-level-D{
-    background-color: #51b045;
+[class^="critical-cell"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 [class^="critical-block"]{
     height: 40px;
@@ -134,12 +113,6 @@
 .border-left-info{
     border-left: 2px solid cyan;
 }
-
-.risk-matrix-impact-number{
-    height: 25px;
-    width: 22%;
-}
-
 .critical-matrix-time{
     position: relative;
     height: 30px;
@@ -180,37 +153,6 @@
 .table-subtitle{
     font-size: 12px;
 }
-.text-orange{
-    color: orange;
-}
-.roman-number-style{
-    position: relative;
-    font-size: 50px;
-    color: rgb(126, 125, 125);
-    opacity: 0.7;
-}
-.roman-top{
-    top: 25px;
-    right: 10px;
-}
-.roman-below{
-    top: -40px;
-}
-.likehood-subtitle{
-    position: relative;
-    transform: rotate(-90deg);
-    left: -100px;
-    top: 150px;
-    font-size: 25px;
-    color: gray;
-}
-.impact-subtitle{
-    position: relative;
-    left: -150px;
-    top: 90px;
-    font-size: 25px;
-    color: gray;
-}
 .business-subtitle{
     position: relative;
     transform: rotate(-90deg);
@@ -247,4 +189,27 @@
 .hot-temperature{
     position: relative;
     left: 57px;
+}
+.marker-content{
+    margin: 11px;
+    width: 1px;
+    height: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.marker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 40px;
+    height: 22px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+.title{
+    z-index: -1;
 }
