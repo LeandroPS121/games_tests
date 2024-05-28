@@ -9,9 +9,9 @@ var marker_list7 = [0,0,0,0,0];
 var marker_list8 = [0,0,0,0,0];
 
 var data = {
-    'n': ['R10','R1','R2'],
-    'x':[7,8,6],
-    'y':[5,5,5]
+    'n':['R10','R1','R2'],
+    'x':[2.5,8,6],
+    'y':[1,5,5]
 };
 
 function forData()
@@ -34,11 +34,11 @@ function addMarker(x,y,marker,marker_content)
     var posX = (x-switchX) * p;
 
     var switchY = Number(Math.floor(y));
-    var posY = y-switchY;
+    var posY = (y-switchY) * p;
     marker_content.appendChild(marker);
 
-    // marker_content.style.left = `${decimalY*100}px`;
-    // marker_content.style.bottom = `${decimalX*100}px`;
+    marker_content.style.left = `${posY*100}px`;
+    marker_content.style.bottom = `${posX*100}px`;
 
     count++;
     console.log("X = " + x + "  | Y = " + y);
