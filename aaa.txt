@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="game-container">
+        <div id="card" class="carta">Card 1</div>
+        <div id="new-card" class="carta" style="opacity: 0; transform: translate(50%, -50%) rotate(90deg);">Card 2</div>
+      </div>
+</body>
+<script src="scripts.js"></script>
+</html>
+
+
+
+
+@keyframes fade-out-right {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(50%, -30%) rotate(90deg);
+      opacity: 0;
+    }
+  }
+  
+  body, html {
+    height: 100vh;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carta {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: gray;
+  }
+  
+  #game-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+  }
+
+
+
+
+const card = document.getElementById('card');
+const newCard = document.getElementById('new-card');
+
+card.addEventListener('click', () => {
+  card.style.animation = 'fade-out-right 0.3s ease-in-out forwards';
+  card.addEventListener('animationend', () => {
+    card.style.display = 'none';
+    newCard.style.opacity = '1';
+    newCard.style.transform = 'translate(0, 0)';
+    newCard.style.animation = 'none'; // reset animation
+  });
+});
+
+newCard.addEventListener('click', () => {
+  newCard.style.animation = 'fade-out-right 0.3s ease-in-out forwards';
+  newCard.addEventListener('animationend', () => {
+    newCard.style.display = 'none';
+    card.style.opacity = '1';
+    card.style.transform = 'translate(0, 0)';
+    card.style.animation = 'none'; // reset animation
+  });
+});
