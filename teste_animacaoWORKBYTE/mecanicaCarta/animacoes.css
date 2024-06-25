@@ -1,0 +1,48 @@
+@keyframes finalDoBaralho {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(100%) translateY(0%);
+    }
+    50% {
+        transform: translateX(100%) translateY(50%);
+    }
+    75% {
+        z-index: 0;
+        transform: translateX(0) translateY(50%);
+    }
+    100% {
+        z-index: 0;
+        transform: translateX(0) translateY(0);
+    }
+
+
+    /* 100% {
+        transform: translate(150%);
+    
+    }
+    */
+}
+
+
+@keyframes subirCarta {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        animation-delay: 20s;
+        transform: translateY(-50%);
+    }
+    100% {
+        animation-delay: 2s;
+        transform: translateY(0%);
+    }
+}
+.final {
+    animation: finalDoBaralho 0.5s forwards;
+    animation-delay: 0.2s;
+}
+.sobe {
+    animation: subirCarta 0.7s forwards;
+}
