@@ -46,3 +46,24 @@
     transform-origin: center;
     background-color: blue;
 }
+.frente-carta-cabeca-boneco{
+    border: 1px solid white;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    bottom: 224px;
+}
+.frente-carta-corpo-boneco{
+    border: 1px solid white;
+    position: absolute;
+    height: 225px;
+    width: 300px;
+    bottom: 0px;
+}
+.frente-carta-roupa-boneco{
+    border: 1px solid white;
+    position: absolute;
+    height: 225px;
+    width: 200px;
+    bottom: 0px;
+}

@@ -6,3 +6,13 @@ const STATUSES = {
     "3": 50,
     "4": 50
 }
+// ~~~~~~~~~~~~~~~~
+
+//Funções
+function geraEvento() {
+    let tipo = TIPO_EVENTO[Math.floor(Math.random() * TIPO_EVENTO.length)];
+    let descricaoCarta = document.getElementById('descricao-conteudo');
+    
+}
+
+// ~~~~~~~~~~~~~~~~

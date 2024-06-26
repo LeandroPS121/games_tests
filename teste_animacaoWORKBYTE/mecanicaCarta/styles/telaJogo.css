@@ -68,22 +68,6 @@ body{
     position: relative;
     top: 220px;
 }
-
-.frente-carta-cabeca-boneco{
-    width: 125px;
-    height: 125px;
-    bottom: 224px;
-}
-.frente-carta-corpo-boneco{
-    height: 225px;
-    width: 300px;
-    bottom: 0px;
-}
-.frente-carta-roupa-boneco{
-    height: 225px;
-    width: 200px;
-    bottom: 0px;
-}
 /* 
 "background": `radial-gradient(circle, rgba(179, 0, 183, 1) ${status}%, gray 0%)`,
             "backgroundSize": "1% 200%" 

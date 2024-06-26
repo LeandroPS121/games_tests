@@ -43,6 +43,12 @@ function gerarNovaCarta() {
 // Gera uma nova carta puxando informações para frente e verso
 function gerarCarta() {
     let novaCarta = document.createElement('div');
+    let cabecaBoneco = document.createElement('div');
+    let corpoBoneco = document.createElement('div');
+    let roupaBoneco = document.createElement('div');
+    cabecaBoneco.classList.add('frente-carta-cabeca-boneco')
+    roupaBoneco.classList.add('frente-carta-roupa-boneco')
+    corpoBoneco.classList.add('frente-carta-corpo-boneco')
     if (frenteOuVerso) {
         let versoCarta = document.getElementById('verso-carta');
         versoCarta.textContent = descricoes[Math.floor(Math.random()*descricoes.length)]
@@ -54,8 +60,12 @@ function gerarCarta() {
     novaCarta.textContent = palavras[Math.floor(Math.random()*6)];
     // novaCarta.style.background = coresFundo[Math.floor(Math.random()*5)];
     novaCarta.id = `carta${contador}`;
-
+    
     contador++;
+
+    novaCarta.appendChild(cabecaBoneco)
+    novaCarta.appendChild(roupaBoneco)
+    novaCarta.appendChild(corpoBoneco)
     frenteCarta.append(novaCarta);
 }
 
