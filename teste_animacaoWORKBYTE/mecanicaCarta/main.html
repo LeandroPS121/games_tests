@@ -16,26 +16,25 @@
         <!-- Status -->
         <div id="status-conteudo" class="row mx-0 border border-danger">
             <div class="status border border-danger col-3">
-                <div class="status-circulo">dinheiro</div>
+                <div id="st-1" class="status-circulo">dinheiro</div>
             </div>
             <div class="status border border-danger col-3">
-                <div class="status-circulo">energia</div>
+                <div id="st-2" class="status-circulo">energia</div>
             </div>
             <div class="status border border-danger col-3">
-                <div class="status-circulo">paciencia</div>
+                <div id="st-3" class="status-circulo">paciencia</div>
             </div>
             <div class="status border border-danger col-3">
-                <div class="status-circulo">reputação</div>
+                <div id="st-4" class="status-circulo">reputação</div>
             </div>
         </div>
 
         <!-- Pontuação -->
-        <div id="pontuacao-conteudo" class="row mx-0 border border-danger mt-2">
-
+        <div id="pontuacao-conteudo" class="row mx-0 d-flex align-items-center justify-content-center border border-danger mt-2">
         </div>
         
         <!-- Descrição da Carta -->
-        <div id="descricao-conteudo" class="row mx-0 border border-danger mt-2">
+        <div id="descricao-conteudo" class="row mx-0 d-flex justify-content-center align-items-center border border-danger mt-2">
         </div>
         
         <!-- Carta -->
@@ -59,18 +58,16 @@
         <!-- Botões de Ação -->
         <div id="botao-conteudo" class="position-relative d-flex justify-content-between">
             <div class="btn-div">
-                <button id="btn-1" class="btns my-5" onclick="gerarNovaCarta()"></button>
+                <button id="btn-1" class="btns my-5" onclick="gerarNovaCarta(); gerarEvento(1)" onmouseover="statusAlterado()" onmouseout="statusOriginal()"></button>
             </div>
             <div class="btn-div">
                 <button class="btns virarCarta" onclick="virarCarta()">...</button>
             </div>
             <div class="btn-div">
-                <button id="btn-2" class="btns my-5" onclick="gerarNovaCarta()"></button>
+                <button id="btn-2" class="btns my-5" onclick="gerarNovaCarta(); gerarEvento(2)" onmouseover="statusAlterado()" onmouseout="statusOriginal()"></button>
             </div>
         </div>
     </div>
-
-<script src="scripts/carta.js"></script>
 <script src="scripts/eventos.js"></script>
 <script src="scripts/motor.js"></script>
 </body>

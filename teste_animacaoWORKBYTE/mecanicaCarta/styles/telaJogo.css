@@ -8,6 +8,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    color: white;
 }
 #tela-conteudo{
     height: 900px;
@@ -68,7 +69,3 @@ body{
     position: relative;
     top: 220px;
 }
-/* 
-"background": `radial-gradient(circle, rgba(179, 0, 183, 1) ${status}%, gray 0%)`,
-            "backgroundSize": "1% 200%" 
-*/
