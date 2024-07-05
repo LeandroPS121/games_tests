@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<title>Document</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .card-container {
+        width: 200px;
+        height: 300px;
+        perspective: 1000px; /* Define a perspectiva para o efeito de profundidade */
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d; /* Garante que os filhos mantenham a posição no espaço 3D */
+        transition: transform 0.6s ease; /* Transição suave */
+    }
+
+    .card-front, .card-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden; /* Esconde o verso do elemento durante a animação */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border: 1px solid #ccc;
+        background-color: white;
+    }
+
+    .card-back {
+        transform: rotateY(180deg); /* Inicialmente esconde o verso */
+    }
+
+    /* Animação para virar a carta */
+    .flip {
+        transform: rotateY(140deg);
+    }
+</style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card" id="carta">
+            <div class="card-front">
+                Frente da Carta
+            </div>
+            <div class="card-back">
+                Verso da Carta
+            </div>
+        </div>
+    </div>
+
+    <button onclick="virarCarta()">Virar Carta</button>
+
+    <script>
+        function virarCarta() {
+            var carta = document.getElementById('carta');
+            carta.classList.toggle('flip');
+        }
+    </script>
+</body>
+</html>

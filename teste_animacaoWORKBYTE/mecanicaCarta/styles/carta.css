@@ -1,0 +1,69 @@
+.carta-conteudo {
+    perspective: 1000px; /* Define a perspectiva para o efeito de profundidade */
+    height: 450px;
+    width: 450px;
+    position: relative;
+    transform-style: preserve-3d; /* Garante que os filhos mantenham a posição no espaço 3D */
+    transition: transform 0.6s ease; /* Transição suave */
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Esconde o verso do elemento durante a animação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.card-back {
+    background-color: gray;
+    transform: rotateY(180deg); /* Inicialmente esconde o verso */
+}
+
+/* Animação para virar a carta */
+.flip {
+    transform: rotateY(180deg);
+}
+
+#frente-carta {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+.carta {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    transform-origin: center;
+    background-color: blue;
+}
+.frente-carta-cabeca-boneco{
+    border: 1px solid white;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    bottom: 224px;
+}
+.frente-carta-corpo-boneco{
+    border: 1px solid white;
+    position: absolute;
+    height: 225px;
+    width: 300px;
+    bottom: 0px;
+}
+.frente-carta-roupa-boneco{
+    border: 1px solid white;
+    position: absolute;
+    height: 225px;
+    width: 200px;
+    bottom: 0px;
+}

@@ -1,0 +1,15 @@
+DURO - 2
+
+
+ideia:
+
+	duro
+	duro
+	macio
+	ultra macio -> sobrar: 10 litros
+
+
+	duro
+	duro
+	macio
+	super macio -> sobrar: 4 litros

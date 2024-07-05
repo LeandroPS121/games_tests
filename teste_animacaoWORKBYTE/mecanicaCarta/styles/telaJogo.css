@@ -1,0 +1,71 @@
+/* Configuração da tela do jogo */
+*{
+    user-select: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+}
+#tela-conteudo{
+    height: 900px;
+    width: 550px;
+    background-color: rgb(45, 0, 104);
+    border-radius: 10px;
+}
+
+/* Configuração da div de status */
+#status-conteudo{
+    height: 100px;
+}
+.status-circulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 2px solid black;
+    background: radial-gradient(circle, rgba(179, 0, 183, 1) 50%, rgb(184, 184, 184) 0%);
+    background-size: 1% 200%;
+}
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Configuração da div de pontuação */
+#pontuacao-conteudo{
+    height: 50px;
+}
+
+/* Configuração da div de descrição */
+#descricao-conteudo{
+    height: 170px;
+}
+#botao-conteudo{
+    position: relative;
+    bottom: 250px;
+    height: 50px;
+    width: 100%;
+}
+.btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.btns{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+.virarCarta{
+    position: relative;
+    top: 220px;
+}
